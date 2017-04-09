@@ -53,7 +53,7 @@ public class JWTOAuth2Config extends AuthorizationServerConfigurerAdapter {
         clients.inMemory()
                 .withClient("myappclient")
                 .secret("myappsecret")
-                .authorizedGrantTypes("password", "client_credentials")
+                .authorizedGrantTypes("password", "client_credentials","refresh_token")
                 .scopes("webclient", "mobileclient");
     }
 }
