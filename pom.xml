@@ -44,7 +44,7 @@
 			<scope>test</scope>
 		</dependency>
 
-		<!-- Database -->
+		<!-- Database  related dependencies-->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-jdbc</artifactId>
@@ -54,8 +54,12 @@
 			<artifactId>postgresql</artifactId>
 			<version>42.1.1</version>
 		</dependency>
+		<dependency>
+			<groupId>org.flywaydb</groupId>
+			<artifactId>flyway-core</artifactId>
+			<version>4.2.0</version>
+		</dependency>
 	</dependencies>
-
 	<dependencyManagement>
 		<dependencies>
 			<dependency>
@@ -72,7 +76,6 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
-
 				<configuration>
 					<jvmArguments>
 						-Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=7001
@@ -81,6 +84,4 @@
 			</plugin>
 		</plugins>
 	</build>
-
-
 </project>
