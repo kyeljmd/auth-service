@@ -1,4 +1,4 @@
-package com.scorpion.auth.service.security;
+package com.scorpion.auth.service.security.oauth;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;
